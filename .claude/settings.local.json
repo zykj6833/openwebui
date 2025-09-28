@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone https://github.com/OVINC-CN/OpenWebUI.git OpenWebUI-main)",
+      "Bash(git tag --sort=-version:refname)",
+      "Bash(git checkout v0.6.31.1)",
+      "Bash(python3 -m venv backend/venv)",
+      "Bash(python3.12 --version)",
+      "Bash(python3.11 --version)",
+      "Bash(uvicorn backend.open_webui.main:app --port $PORT --host 0.0.0.0 --forwarded-allow-ips '*' --reload)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
